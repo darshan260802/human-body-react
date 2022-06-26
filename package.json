@@ -1,16 +1,27 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "preview.jpeg"
+    "src"
   ],
   "engines": {
     "node": ">=10"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darshan260802/human-body-react.git"
+  },
+  "keywords": [
+    "human",
+    "body",
+    "human-body",
+    "human-body-react",
+    "reactjs-human-body",
+    "human body"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
