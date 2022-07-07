@@ -3,8 +3,145 @@
 Build one Human Body figure inyour web Page using React.
 Show the parts you want and click on them to select it.
 
-![Human figure example](./preview.jpeg)
+![Body Preview](src/preview.png)
 
+## Props
+
+<table>
+<tr>
+  <th>Name</th>
+  <th>Type</th>
+  <th>Description</th>
+  <th>Default</th>
+</tr>
+<tr>
+  <td>partsInput</td>
+  <td>object</td>
+  <td>Parts Parameters</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>onChange</td>
+  <td>function</td>
+  <td>Function trigger on change in parts, gives one argument parts</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>onClick</td>
+  <td>function</td>
+  <td>Function trigger on click in parts, gives one argument id of clicked part</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>mode</td>
+  <td>string</td>
+  <td>missing | pain, Mode of operation: missing mode is smart mode</td>
+  <td>pain</td>
+</tr>
+<tr>
+  <td>height</td>
+  <td>string</td>
+  <td>Height of body div</td>
+  <td>510px</td>
+</tr>
+<tr>
+  <td>width</td>
+  <td>string</td>
+  <td>Width of body div</td>
+  <td>207px</td>
+</tr>
+</table>
+
+## Parts Params
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td>selected</td>
+    <td>boolean</td>
+    <td>Body Part is selected or not</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>clickable</td>
+    <td>boolean</td>
+    <td>Body Part can be selected or not</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>show</td>
+    <td>boolean</td>
+    <td>Body Part is visible or not</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>custom values</td>
+    <td>any</td>
+    <td>Any other value param to be used (can be retrived with onChange)</td>
+    <td>...</td>
+  </tr>
+</table>
+
+## Body Parts 
+
+<table>
+  <tr>
+    <td>head</td>
+  </tr>
+  <tr>
+    <td>chest</td>
+  </tr>
+  <tr>
+    <td>stomach</td>
+  </tr>
+  <tr>
+    <td>left_shoulder</td>
+  </tr>
+  <tr>
+    <td>left_arm_upper</td>
+  </tr>
+  <tr>
+    <td>left_arm_lower</td>
+  </tr>
+  <tr>
+    <td>left_hand</td>
+  </tr>
+  <tr>
+    <td>right_shoulder</td>
+  </tr>
+  <tr>
+    <td>right_arm_upper</td>
+  </tr>
+  <tr>
+    <td>right_arm_lower</td>
+  </tr>
+  <tr>
+    <td>right_hand</td>
+  </tr>
+  <tr>
+    <td>left_leg_upper</td>
+  </tr>
+  <tr>
+    <td>left_leg_lower</td>
+  </tr>
+  <tr>
+    <td>left_foot</td>
+  </tr>
+  <tr>
+    <td>right_leg_upper</td>
+  </tr>
+  <tr>
+    <td>right_leg_lower</td>
+  </tr>
+  <tr>
+    <td>right_foot</td>
+  </tr>
+</table>
 
 
 ## How to use it
@@ -25,14 +162,7 @@ export const App: VFC = () => {
 }
 ```
 
-## TODO
 
-* Individual Protection Equipment (helmet...)
-
-
-Thanks to:
-* https://github.com/volcanioo/Human-Body-Rendering-HTML<br/>
-* https://github.com/mariohmol/reactjs-human-body
 
 <h1>By: Darshan Patel</h1>
 <h4>LinkedIN: <a href="https://www.linkedin.com/in/darshan-patel-2608" >Darshan Patel</a></h4>
