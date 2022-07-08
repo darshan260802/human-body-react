@@ -20,10 +20,10 @@ const Wrapper = styled.div<WrapperProps>`
   }
 
   & path:hover {
-    fill: red;
+    fill: gray;
   }
   & path.selected {
-    fill: red;
+    fill: gray;
   }
 
   & path.noHover {
