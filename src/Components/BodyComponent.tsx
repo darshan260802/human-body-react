@@ -107,14 +107,12 @@ export const BodyComponent: React.FC<BodyComponentProps> = ({
       let ids: string[] = [];
 
       if (id === "left_shoulder")
-        ids = ["left_arm_upper", "left_arm_lower", "left_hand"];
-      if (id === "left_arm_upper") ids = ["left_arm_lower", "left_hand"];
-      if (id === "left_arm_lower") ids = ["left_hand"];
+        ids = ["left_arm", "left_hand"];
+      if (id === "left_arm") ids = ["left_hand"];
 
       if (id === "right_shoulder")
-        ids = ["right_arm_lower", "right_arm_upper", "right_hand"];
-      if (id === "right_arm_upper") ids = ["right_arm_lower", "right_hand"];
-      if (id === "right_arm_lower") ids = ["right_hand"];
+        ids = ["right_arm", "right_hand"];
+      if (id === "right_arm") ids = ["right_hand"];
 
       if (id === "left_leg_upper") ids = ["left_leg_lower", "left_foot"];
       if (id === "left_leg_lower") ids = ["left_foot"];
