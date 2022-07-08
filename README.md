@@ -92,53 +92,25 @@ Show the parts you want and click on them to select it.
 <table>
   <tr>
     <td>head</td>
-  </tr>
-  <tr>
     <td>chest</td>
-  </tr>
-  <tr>
     <td>stomach</td>
-  </tr>
-  <tr>
     <td>left_shoulder</td>
   </tr>
   <tr>
-    <td>left_arm_upper</td>
-  </tr>
-  <tr>
-    <td>left_arm_lower</td>
-  </tr>
-  <tr>
+    <td>left_arm</td>
     <td>left_hand</td>
-  </tr>
-  <tr>
     <td>right_shoulder</td>
-  </tr>
-  <tr>
-    <td>right_arm_upper</td>
-  </tr>
-  <tr>
-    <td>right_arm_lower</td>
-  </tr>
-  <tr>
-    <td>right_hand</td>
-  </tr>
-  <tr>
-    <td>left_leg_upper</td>
-  </tr>
-  <tr>
     <td>left_leg_lower</td>
   </tr>
   <tr>
+    <td>right_arm</td>
+    <td>right_hand</td>
+    <td>left_leg_upper</td>
     <td>left_foot</td>
   </tr>
   <tr>
     <td>right_leg_upper</td>
-  </tr>
-  <tr>
     <td>right_leg_lower</td>
-  </tr>
-  <tr>
     <td>right_foot</td>
   </tr>
 </table>
