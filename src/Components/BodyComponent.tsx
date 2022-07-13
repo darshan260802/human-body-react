@@ -66,7 +66,7 @@ export const PARTS_GROUPS: any = {
     right_leg_lower: true,
   },
   hands: { right_hand: true, left_hand: true },
-  foots: { left_foot: true, right_foot: true },
+  foots: { left_foot: true, right_foot: true }
 };
 
 export interface BodyComponentProps {
