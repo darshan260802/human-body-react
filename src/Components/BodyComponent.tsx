@@ -97,27 +97,96 @@ export const BodyComponent: React.FC<BodyComponentProps> = ({
 
     if (newParts[id] === true || newParts[id] === false) {
       newParts[id] = !newParts[id];
-    } else if (newParts[id]) {
+    } else 
+    if (newParts[id]) {
       newParts[id].selected = !newParts[id].selected;
     } else {
       newParts[id] = { selected: true };
     }
 
+
     if (mode === "missing") {
-      let ids: string[] = [];
+      let ids: string[] = [];      
 
-      if (id === "left_shoulder")
-        ids = ["left_arm",  "left_hand"];
-      if (id === "left_arm") ids = ["left_hand"];
+        if(newParts[id].selected) // WHEN PART IS MISSING
+        {
+            switch(id){
+                // LEFT HAND
+                case "left_shoulder":
+                    ids = ["left_arm", "left_hand"];
+                    break;
 
-      if (id === "right_shoulder")
-        ids = ["right_arm", "right_hand"];
-      if (id === "right_arm") ids = ["right_hand"];
+                case "left_arm":
+                    ids = ["left_hand"];
+                    break;
 
-      if (id === "left_leg_upper") ids = ["left_leg_lower", "left_foot"];
-      if (id === "left_leg_lower") ids = ["left_foot"];
-      if (id === "right_leg_upper") ids = ["right_leg_lower", "right_foot"];
-      if (id === "right_leg_lower") ids = ["right_foot"];
+                // RIGHT HAND
+                case "right_shoulder":
+                    ids = ["right_arm", "right_hand"];
+                    break;
+
+                case "right_arm":
+                    ids = ["right_hand"];
+                    break;
+
+                // LEFT LEG
+                case "left_leg_upper":
+                    ids = ["left_leg_lower","left_foot"]
+                    break;
+
+                case "left_leg_lower":
+                    ids = ["left_foot"]
+                    break;
+
+                // RIGHT LEG
+                case "right_leg_upper":
+                    ids = ["right_leg_lower","right_foot"]
+                    break;
+
+                case "right_leg_lower":
+                    ids = ["right_foot"]
+                    break;
+            }
+        }else{ // WHEN PART IS NOT MISSING
+            switch(id){
+                // LEFT HAND
+                case "left_hand":
+                    ids = ["left_arm", "left_shoulder"];
+                    break;
+
+                case "left_arm":
+                    ids = ["left_shoulder"];
+                    break;
+
+                // RIGHT HAND
+                case "right_hand":
+                    ids = ["right_arm", "right_shoulder"];
+                    break;
+
+                case "right_arm":
+                    ids = ["right_shoulder"];
+                    break;
+
+                // LEFT LEG
+                case "left_foot":
+                    ids = ["left_leg_lower","left_leg_upper"]
+                    break;
+
+                case "left_leg_lower":
+                    ids = ["left_leg_upper"]
+                    break;
+
+                // RIGHT LEG
+                case "right_foot":
+                    ids = ["right_leg_lower","right_leg_upper"]
+                    break;
+
+                case "right_leg_lower":
+                    ids = ["right_leg_upper"]
+                    break;
+            }
+        }
+
 
       ids.forEach((organ) => {
         if (newParts[organ] === true || newParts[organ] === false) {
